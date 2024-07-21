@@ -5,9 +5,9 @@ export default function CustomerReview() {
   return (
     <div className="max-container">
       <h3 className="font-palanquin text-center text-4xl font-bold">
-        What our
+        What our 
         <span className="text-coral-red">Customers</span>
-        say?
+         say?
       </h3>
 
       <p className="info-text m-auto mt-4 max-w-lg text-center">

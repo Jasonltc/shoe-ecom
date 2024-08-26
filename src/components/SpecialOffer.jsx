@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 export default function SpecialOffer() {
   return (
-    <div className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
+    <div className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 info-section">
       <div className="flex-1">
         <img
           src={offer}
@@ -16,17 +16,17 @@ export default function SpecialOffer() {
       </div>
 
       <div className="flex flex-1 flex-col">
-        <h2 className="text-4xl font-palanquin capitalize font-bold lg:max-w-lg">
-          <span className="text-coral-red">Special Offer</span> Offer
+        <h2 className="text-2xl mb-8 font-palanquin capitalize font-bold lg:max-w-lg md:text-4xl">
+          <span className="text-coral-red">Special</span> Offer
         </h2>
 
-        <p className="mt-4 lg:max-w-lg info-text">
+        <p className="paragraph mb-6">
           Embark on a shopping Journey that redefines your experience with
           unbeatable deals. From premier selections to incredible savings, we
           offer unparalleled value that sets us apart.
         </p>
 
-        <p className="mt-6 lg:max-w-lg info-text">
+        <p className="paragraph">
           Navigate a realm of possiblities designed to fulfill your unique
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional

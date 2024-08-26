@@ -5,14 +5,14 @@ export default function SuperQuality() {
   return (
     <div
       id="about-us"
-      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
+      className="flex justify-between items-center max-lg:flex-col gap-10 w-full info-section"
     >
       <div className="flex flex-1 flex-col">
-        <h2 className="text-4xl font-palanquin capitalize font-bold lg:max-w-lg">
-          We Provide You<span className="text-coral-red">Super Quality</span>
+        <h2 className="text-2xl font-palanquin capitalize mb-8 font-bold lg:max-w-lg md:text-4xl">
+          We Provide You<span className="text-coral-red"> Super Quality </span>
           Shoes
         </h2>
-        <p className="mt-4 lg:max-w-lg info-text">
+        <p className="paragraph">
           Ensuring premium comfort and style, our Meticulously crafted footwear
           is designed to elevate your experience, providing you with unmatched
           quality, innovation, and a touch of elegance.
@@ -24,6 +24,7 @@ export default function SuperQuality() {
           <Button label="View Details" />
         </div>
       </div>
+
       <div className="flex-1 flex justify-center items-center">
         <img
           src={shoe8}

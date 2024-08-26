@@ -11,33 +11,35 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 info-section"
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-        <p className="text-xl font-monstserrat text-coral-red">
+      <div className="relative flex flex-col justify-center items-start w-full pt-28 xl:w-2/5 ">
+        <p className="text-xl font-monstserrat text-coral-red md:text-3xl">
           Our Summer Collection
         </p>
 
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leadng-[82] font-bold">
-          <span className="xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-10 font-palanquin text-4xl font-bold md:text-8xl">
+          <span className="relative z-10 pr-10 xl:whitespace-nowrap">
             The New Arrival
           </span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Nike </span>shoes
+          <span className="text-coral-red inline-block mt-3">Nike</span> shoes
         </h1>
 
-        <p className="font-monstserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
+        <p className="paragraph mt-6 mb-14">
           Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
 
         <Button label="Show now" iconURL={arrowRight} />
 
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-start items-start flex-wrap w-full mt-10 gap-10">
           {statistics.map((stat) => (
             <div key={stat.value}>
-              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
-              <p className=" leading-7 font-monstserrat text-slate-gray">
+              <p className="text-xl font-palanquin font-bold md:text-4xl">
+                {stat.value}
+              </p>
+              <p className="text-sm leading-7 font-monstserrat text-slate-gray md:text-lg">
                 {stat.label}
               </p>
             </div>
@@ -54,7 +56,7 @@ export default function Hero() {
           className="object-contain relative z-10"
         />
 
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] left-[50%] -translate-x-[50%]">
           {shoes.map((shoe) => (
             <div key={shoe.thumbnail}>
               <ShoeCard

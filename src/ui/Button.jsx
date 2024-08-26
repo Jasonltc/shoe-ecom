@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function Button({
   label,
   iconURL,
@@ -7,8 +8,8 @@ export default function Button({
   fullWidth,
 }) {
   return (
-    <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full ${
+    <motion.button
+      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-base leading-none rounded-full ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor}`
           : "bg-coral-red text-white border-coral-red"
@@ -22,6 +23,6 @@ export default function Button({
           className="ml-2 rounded-full w-5 h-5"
         />
       )}
-    </button>
+    </motion.button>
   );
 }

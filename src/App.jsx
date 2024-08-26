@@ -14,28 +14,28 @@ export default function App() {
       <NavBar />
       <main className="">
         {/* <nav></nav> */}
-        <section className="xl:padding-l wide:padding-r padding-b">
+        <section>
           <Hero />
         </section>
-        <section className="padding">
+        <section>
           <PopularProduct />
         </section>
-        <section className="padding">
+        <section>
           <SuperQuality />
         </section>
-        <section className="padding-x py-10">
+        <section>
           <Services />
         </section>
-        <section className="padding">
+        <section>
           <SpecialOffer />
         </section>
-        <section className="bg-pale-blue padding">
+        <section className="bg-pale-blue">
           <CustomerReview />
         </section>
-        <section className="padding-x sm:py-32 py-16 w-full">
+        <section className="w-full">
           <Subscribe />
         </section>
-        <section className="bg-black padding-x padding-t pb-8">
+        <section className="bg-black">
           <Footer />
         </section>
       </main>

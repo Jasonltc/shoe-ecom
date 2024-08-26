@@ -6,10 +6,12 @@ export default function ReviewCard({ imgURL, customerName, rating, feedback }) {
       <img
         src={imgURL}
         alt="customer"
-        className="rounded-full object-cover w-[120px] h-[120px]"
+        className="rounded-full object-cover w-[120px] h-[120px] mb-8"
       />
-      <p className="mt-6 max-w-sm text-center info-text">{feedback}</p>
-      <div className="mt-3 flex justify-center items-center gap-2.5">
+
+      <p className="paragraph text-center mb-4 lg:max-w-sm">{feedback}</p>
+
+      <div className="flex justify-center items-center gap-2.5 mb-4">
         <img
           src={star}
           alt="star"
@@ -17,9 +19,11 @@ export default function ReviewCard({ imgURL, customerName, rating, feedback }) {
           height={24}
           className="object-container m-0"
         />
-        <p className="text-1 font-monstserrat text-slate-gray">{rating}</p>
+
+        <p className="text-base font-monstserrat text-slate-gray">{rating}</p>
       </div>
-      <h3 className="mt-1 font-palanquin text-3xl text-center font-bold">
+
+      <h3 className="font-palanquin text-2xl text-center font-bold">
         {customerName}
       </h3>
     </div>

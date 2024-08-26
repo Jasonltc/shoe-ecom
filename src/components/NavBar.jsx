@@ -4,7 +4,7 @@ import { navLinks } from "../constant/";
 
 export default function NavBar() {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="py-8 px-3 absolute z-10 w-full lg:px-10">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />

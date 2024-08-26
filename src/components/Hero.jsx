@@ -56,7 +56,7 @@ export default function Hero() {
           className="object-contain relative z-10"
         />
 
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] left-[50%] -translate-x-[50%]">
+        <div className="flex gap-4 md:gap-6 absolute -bottom-[5%] left-[50%] -translate-x-[50%]">
           {shoes.map((shoe) => (
             <div key={shoe.thumbnail}>
               <ShoeCard
